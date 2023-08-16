@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+:root {
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  color: #fff;
+  background-color: #FDC772;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100%;
+}
+
+.container-fluid {
+  max-width: 66rem;
+  padding: 6rem 4rem;
+}
+
+.tagline {
+  height: 8rem;
+}
+
+.coming-soon {
+  color: white;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-top: 1.5rem;
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 48em) {
+  .container-fluid {
+    padding: 0;
+  }
+
+  .coming-soon {
+    margin-top: 2.5rem;
+  }
+}
