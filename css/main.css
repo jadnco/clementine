@@ -35,7 +35,7 @@ img {
   display: flex;
   width: 100%;
   max-width: 50rem;
-  padding: 2rem 2rem;
+  padding: 1rem 2rem;
   flex-flow: column;
   box-sizing: border-box;
 }
@@ -77,6 +77,18 @@ img {
   padding-bottom: 0rem;
 }
 
+.footer {
+  flex: 0;
+  padding-bottom: 0rem;
+  justify-content: center;
+}
+
+.copyright {
+  color: #000;
+  opacity: 0.15;
+  font-size: 0.8rem;
+}
+
 .clouds {
   position: absolute;
   width: 100%;
@@ -87,6 +99,27 @@ img {
   background-size: cover;
   z-index: -1;
   animation: pan 15s linear infinite alternate;
+}
+
+.btn {
+  color: #FDC772;
+  background: #fff;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.btn-arrow:after {
+  content: "\027A4";
+  padding-left: 1rem;
+}
+
+.contact-btn {
+  margin-top: 3rem;
 }
 
 @media only screen and (min-width: 48em) {
@@ -114,6 +147,10 @@ img {
   .intro {
     font-size: 1.5rem;
     margin-top: 2rem;
+  }
+
+  .footer {
+    padding-bottom: 2rem;
   }
 }
 
