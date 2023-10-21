@@ -13,7 +13,7 @@ body {
 
 :root {
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.4;
   font-family: 'Figtree', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -100,7 +100,7 @@ a {
   margin: 0;
   padding: 0 2rem;
   font-weight: 600;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.05);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.02);
 }
 
 .footer {
@@ -136,16 +136,29 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: inline-block;
   color: #FDC772;
+  transition: all 0.15s;
 }
 
-a.btn {
+a.btn,
+a.btn:link {
   text-decoration: none;
   text-shadow: none;
+  -webkit-tap-highlight-color: #ccc;
 }
 
 .btn-arrow:after {
-  content: "\027A4";
+  content: "\0203A";
   padding-left: 1rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.btn:active {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.2);
+  outline: none;
 }
 
 .contact-btn {
