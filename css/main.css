@@ -91,8 +91,13 @@ a {
   text-align: left;
 }
 
-.ig-logo {
+.ig-logo,
+.fb-logo {
   height: 1.5rem;
+}
+
+.ig-logo {
+  margin-right: 0.3rem;
 }
 
 .about {
